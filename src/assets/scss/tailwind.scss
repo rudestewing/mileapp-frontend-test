@@ -1,7 +1,14 @@
 @import "tailwindcss/base";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+html,body {
+    height: 100%;
+}
+
 body {
     @apply text-gray-900;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -15,6 +22,64 @@ h2 {
 h3 {
     @apply text-lg font-bold;
 }
+
+.card {
+    @apply p-5 rounded-lg bg-white shadow-lg;
+}
+
+.form {
+    @apply mb-4;
+    &__label {
+        @apply text-gray-800;
+    }
+    &__control {
+        @apply bg-white py-2 px-3 rounded-md w-full text-gray-800 border;
+        &:focus {
+            @apply outline-none border border-blue-600;
+        }
+        &:placeholder {
+            @apply text-gray-400;
+        }
+    }
+}
+
+.btn {
+    @apply px-6 py-2 rounded;
+    @apply text-gray-800;
+    &-primary {
+        @apply bg-blue-700 text-white;
+        &:hover {
+            @apply bg-blue-800;
+        }
+    }
+}
+
+.color-primary {
+    @apply bg-blue-700 text-white;
+}
+.color-danger {
+    @apply bg-red-700 text-white;
+}
+
+.separator {
+    @apply flex items-center justify-center text-center;
+    &:before, &:after {
+        content: '';
+        @apply flex-1 border-b border-gray-500;
+    }
+
+    &__text {
+        @apply mx-2 text-gray-700 text-sm;
+    }
+}
+
+.row {
+    @apply flex -mx-4;
+    &__item {
+        @apply mx-4;
+    }
+}
+
 
 
 @import "tailwindcss/components";

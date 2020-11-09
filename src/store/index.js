@@ -11,8 +11,7 @@ export default new Vuex.Store({
                 q: 'Do you prefer vuejs or reactjs? Why ?',
                 type: 'text',
                 answer: 
-                ` 
-                VueJS
+                ` VueJS
                 
                 `
             },
@@ -42,7 +41,7 @@ export default new Vuex.Store({
                 id: 5,
                 q: 'Create a better login page based on https://taskdev.mile.app/login and deploy on https://www.netlify.com (https://www.netlify.com/)!',
                 type: 'link',
-                answer: `/login`
+                answer: `/auth/login`
             },
             {
                 id: 6,

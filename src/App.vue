@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <component :is="layoutName">
-            <router-view></router-view>
-        </component>
-    </div>
+    <component :is="layoutName">
+        <router-view></router-view>
+    </component>
 </template>
 
 <script>

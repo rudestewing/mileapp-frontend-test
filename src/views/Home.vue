@@ -16,7 +16,7 @@
                         <ul v-if="question.childs" class="ml-4">
                             <li v-for="(questionChild) in question.childs" :key="questionChild.id" class="mb-4">
                                 <h4>
-                                    {{questionChild.q}}    
+                                    {{questionChild.id}}. {{questionChild.q}} 
                                 </h4>    
                                 <div>
                                     <component :is="answerComponentName(questionChild.type, questionChild.answer)" :question="questionChild" />
