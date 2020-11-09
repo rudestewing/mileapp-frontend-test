@@ -24,7 +24,15 @@ h3 {
 }
 
 .card {
-    @apply p-5 rounded-lg bg-white shadow-lg;
+    @apply p-5 rounded-lg bg-white;
+
+    &-shadow {
+        @apply shadow-lg;
+    }
+
+    &-border {
+        @apply border;
+    }
 }
 
 .form {

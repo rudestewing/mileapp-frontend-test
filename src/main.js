@@ -5,6 +5,7 @@ import './assets/scss/tailwind.scss';
 import router from './router';
 import store from './store';
 import './assets/scss/bootstrap.scss';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 Vue.config.productionTip = false
 
