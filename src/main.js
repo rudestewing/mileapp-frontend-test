@@ -7,6 +7,9 @@ import store from './store';
 
 Vue.config.productionTip = false
 
+Vue.component('layout-default', () => import('./layouts/DefaultLayout.vue'));
+Vue.component('layout-auth', () => import('./layouts/AuthLayout.vue'));
+
 new Vue({
   router, 
   store,

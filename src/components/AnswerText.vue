@@ -1,12 +1,14 @@
 <template>
-    <p>
-        {{question.answer}}
-        <ul v-if="typeof question.answer == 'array'">
-            <li>
-                
+    <div>
+        <p v-if="typeof question.answer == 'string'" class="whitespace-pre-line">
+            {{question.answer}}
+        </p>
+        <ul v-if="typeof question.answer == 'object'">
+            <li v-for="(answer, idx) in question.answer" :key="idx">
+                {{answer}}
             </li>
         </ul>
-    </p>
+    </div>
 </template>
 
 <script>

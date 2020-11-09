@@ -1,26 +1,34 @@
 <template>
-    <div class="mx-auto max-w-screen-md px-3">
-        <div class="my-5">
-            <h1 class="text-center mb-2">
-                Frontend Test
-            </h1>
-            <h3 class="text-center">
-                Rudi Setiawan
-            </h3>
-            <div class="text-center my-3">
-                <a href="/" class="underline hover:underline font-semibold text-blue-600"> Home </a>
-            </div>
-        </div>
-        <div>
-            <transition name="fade">
-                <router-view></router-view>
-            </transition>
-        </div>
+    <div>
+        <component :is="layoutName">
+            <router-view></router-view>
+        </component>
     </div>
 </template>
 
 <script>
 export default {
+    computed: {
+        layoutName() {
+            let name;
+
+            if(!this.$route.meta.layout) {
+                return 'layout-default';
+            }
+
+            switch (this.$route.meta.layout) {
+                case 'auth':
+                    name = 'layout-auth';
+                    break;
+            
+                default:
+                    name = 'layout-default';
+                    break;
+            }
+
+            return name;
+        }
+    }
 }
 </script>
 
