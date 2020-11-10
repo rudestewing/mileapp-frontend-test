@@ -9,6 +9,11 @@
         <div>
             Duplicates: [ {{duplicates.join(', ')}} ]
         </div>
+        <div>
+            <a href="https://github.com/rudestewing/mileapp-frontend-test/blob/master/src/views/Answer6c.vue" target="_blank" class="underline text-blue-700">
+                https://github.com/rudestewing/mileapp-frontend-test/blob/master/src/views/Answer6c.vue
+            </a>
+        </div>
     </div>
 </template>
 
