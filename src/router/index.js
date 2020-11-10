@@ -7,7 +7,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('../views/home.vue')
+    component: () => import('@/views/home.vue')
   },
   {
     path: '/auth/login',
@@ -15,7 +15,7 @@ const routes = [
     meta: {
       layout: 'auth'
     },
-    component: () => import('../views/auth/login.vue')
+    component: () => import('@/views/auth/login.vue')
   },
   {
     path: '/auth/register',
@@ -23,27 +23,27 @@ const routes = [
     meta: {
       layout: 'auth'
     },
-    component: () => import('../views/auth/register.vue')
+    component: () => import('@/views/auth/register.vue')
   },
   {
     path: '/answer6a',
     name: 'Answer6a',
-    component: () => import('../views/answer6a.vue')
+    component: () => import('@/views/answer6a.vue')
   },
   {
     path: '/answer6b',
     name: 'answer6b',
-    component: () => import('../views/answer6b.vue')
+    component: () => import('@/views/answer6b.vue')
   },
   {
     path: '/answer6c',
     name: 'answer6c',
-    component: () => import('../views/answer6c.vue')
+    component: () => import('@/views/answer6c.vue')
   },
   {
     path: '/answer6d',
     name: 'answer6d',
-    component: () => import('../views/answer6d.vue')
+    component: () => import('@/views/answer6d.vue')
   },
 ];
 
