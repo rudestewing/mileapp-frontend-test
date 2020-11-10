@@ -1,6 +1,8 @@
 <template>
     <component :is="layoutName">
-        <router-view></router-view>
+        <transition name="fade">
+            <router-view></router-view>
+        </transition>
     </component>
 </template>
 

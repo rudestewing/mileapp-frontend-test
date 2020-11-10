@@ -3,11 +3,12 @@ import VueRouter from 'vue-router';
 
 
 import Home from '../views/Home.vue';
-import AuthLogin from '../views/auth/Login.vue';
 import Answer6a from '../views/Answer6a.vue';
 import Answer6b from '../views/Answer6b.vue';
 import Answer6c from '../views/Answer6c.vue';
 import Answer6d from '../views/Answer6d.vue';
+
+import Login from '../views/Login.vue';
 
 Vue.use(VueRouter);
 
@@ -18,12 +19,12 @@ const routes = [
     component: Home
   },
   {
-    path: '/auth/login',
-    name: 'AuthLogin',
+    path: '/login',
+    name: 'Login',
     meta: {
       layout: 'auth'
     },
-    component: AuthLogin,
+    component: Login,
   },
   {
     path: '/answer6a',

@@ -48,7 +48,7 @@ export default new Vuex.Store({
                 id: 5,
                 q: 'Create a better login page based on https://taskdev.mile.app/login and deploy on https://www.netlify.com (https://www.netlify.com/)!',
                 type: 'link',
-                answer: `/auth/login`
+                answer: `/login`
             },
             {
                 id: 6,
