@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 col-md-5">
                 <div class="max-w-md mx-auto h-full md:flex md:flex-col justify-center">
-                    <div class="mb-5 w-32 md:w-full mx-auto">
+                    <div class="mb-5 w-40 md:w-full mx-auto">
                         <img src="https://mile.app/69ece7b1819e760b63623e810922b59e.png" alt="">
                     </div>
                     <div class="text-gray-700 font-semibold tracking-wider text-xl hidden md:block">
