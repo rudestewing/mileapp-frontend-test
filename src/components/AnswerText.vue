@@ -3,7 +3,7 @@
         <p v-if="typeof question.answer == 'string'" class="whitespace-pre-line">
             {{question.answer}}
         </p>
-        <ul v-if="typeof question.answer == 'object'">
+        <ul v-if="typeof question.answer == 'object'" class="list-disc pl-5">
             <li v-for="(answer, idx) in question.answer" :key="idx">
                 {{answer}}
             </li>

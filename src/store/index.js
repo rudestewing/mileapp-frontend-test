@@ -40,9 +40,11 @@ export default new Vuex.Store({
             {
                 id: 4,
                 q: 'Give your analysis results regarding https://taskdev.mile.app/login from the UI / UX side!',
-                answer: 
-                ` After web loaded, user need to know the focus of where to fill in first.
-                `
+                answer: [
+                    'After web loaded, user need to know the focus of where to fill in first.',
+                    'login page must be loaded full in 1 page, user see entire login page in 1 page without scrolling again.',
+                    'must add container or extra padding in mobile view because card login form is stick to screen size. need more extra padding little bit.'
+                ]
             },
             {
                 id: 5,
