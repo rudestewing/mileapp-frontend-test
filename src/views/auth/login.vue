@@ -23,12 +23,12 @@
                             <form @submit.prevent="handleSubmit">
                                 <div class="form">
                                     <label for="" class="form__label">Username</label>
-                                    <ValidationProvider rules="required|email" v-slot="v">
+                                    <validation-provider rules="required|email" v-slot="v">
                                         <input type="text" v-model="form.username" class="form__control" placeholder="Username" autofocus>
                                         <span class="form__message form__message-error">
                                             {{v.errors[0]}}
                                         </span>
-                                    </ValidationProvider>
+                                    </validation-provider>
                                 </div>
                                 <div class="form">
                                     <label for="" class="form__label">Password</label>

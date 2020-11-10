@@ -11,31 +11,37 @@ export default new Vuex.Store({
                 q: 'Do you prefer vuejs or reactjs? Why ?',
                 type: 'text',
                 answer: 
-                ` VueJS
+                ` VueJS, is easy to learn and understandable, learning process is more easier than react.
+
+                React more like library instead of framework, if I want to build an powerful web app, it will take much times to setup.
                 
+                I learned ReactJS the first before VueJS, it took months to understand the ecosystem (Redux & Context)
+                Then I know about Vue, it much easier to learn because the documentation is well writen.
+                concept of VueJs is not much different to ReactJS. that's very helpful to learn react first before going into vue.
+                until now there are still a project that I'am working on with React, but not very complex.
                 `
             },
             {
                 id: 2,
                 q: 'What complex things have you done in frontend development ?',
                 answer: [
-                    // 'Nested Form Array for Registration Ticket in Event Registration Portal Website',
-                    'Upload Button with previews',
-                    'Animation',
+                    'Make spesific shapes through CSS',
+                    'Animations',
                 ]
             },
             {
                 id: 3,
                 q: 'why does a UI Developer need to know and understand UX? how far do you understand it?',
                 answer: 
-                ` 
-                ...
-                `
+                ` Developer must know bout UX, every design that is made is not necesserily be implemented in website & accessible by user`
             },
             {
                 id: 4,
                 q: 'Give your analysis results regarding https://taskdev.mile.app/login from the UI / UX side!',
-                answer: ``
+                answer: 
+                ` After web loaded, user need to know the focus of where to fill in first.
+                
+                `
             },
             {
                 id: 5,
