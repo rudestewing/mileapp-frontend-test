@@ -33,7 +33,9 @@ export default new Vuex.Store({
                 id: 3,
                 q: 'why does a UI Developer need to know and understand UX? how far do you understand it?',
                 answer: 
-                ` Developer must know bout UX, every design that is made is not necesserily be implemented in website & accessible by user`
+                ` Developer must know bout UX, every design that is made is not necesserily be implemented in website & accessible by user.
+                User Interface should make users interested and make it easier to achieve the goals the user wants
+                `
             },
             {
                 id: 4,

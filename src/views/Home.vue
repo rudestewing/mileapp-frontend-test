@@ -7,7 +7,7 @@
                         {{question.id}}.
                     </div>
                     <div class="w-11/12">
-                        <h3>
+                        <h3 class="mb-1">
                             {{question.q}}
                         </h3>
                         <div class="mb-5">
