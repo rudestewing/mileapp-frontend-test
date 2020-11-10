@@ -40,7 +40,6 @@ export default new Vuex.Store({
                 q: 'Give your analysis results regarding https://taskdev.mile.app/login from the UI / UX side!',
                 answer: 
                 ` After web loaded, user need to know the focus of where to fill in first.
-                
                 `
             },
             {
