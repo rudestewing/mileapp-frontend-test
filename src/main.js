@@ -6,6 +6,7 @@ import router from './router';
 import store from './store';
 import './assets/scss/bootstrap.scss';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import './plugins/vee-validate';
 
 Vue.config.productionTip = false
 
