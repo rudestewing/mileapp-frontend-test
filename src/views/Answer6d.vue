@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import func from '../../vue-temp/vue-editor-bridge';
 export default {
     mounted() {
         let array_code = [
@@ -35,13 +36,25 @@ export default {
             "1.4.1.", 
             "1.4.3."
         ];
-        
+
         let objectCode = {};
-        Array.from(array_code).forEach((item) => {
-            let itemArray = item.split('.');
-            console.log(itemArray);
-            
-        });
+
+        array_code.reduce(function(o, s) {
+            return o[s] = {};
+        }, objectCode);
+
+        console.log(objectCode);
+        
+        // Array.from(array_code).forEach((item) => {
+        //     let itemArray = item.split('.');
+        //     itemArray.pop();
+        //     console.log(itemArray);
+        //     objectCode[itemArray] = {
+        //         ...objectCode
+        //     }
+        // });
+
+        console.log(objectCode);
 
         // return :
         // object_code = 
